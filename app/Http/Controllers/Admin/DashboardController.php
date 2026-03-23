@@ -3,13 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
     public function index()
     {
-        // Now pointing to the correct location: admin/dashboard.blade.php
-        return view('admin.dashboard');
+        $members = User::where('role', 'member')->get();
+        return view('admin.dashboard', compact('members'));
     }
 }

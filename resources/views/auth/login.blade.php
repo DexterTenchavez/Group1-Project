@@ -57,7 +57,7 @@
             <div class="glow-orb"></div>
             <div class="left-content">
                 <div class="brand">G1<span>.</span></div>
-                <p class="brand-sub">2nd Semester · 2023–24</p>
+                <p class="brand-sub">2nd Semester · 2026</p>
             </div>
         </div>
         <div class="login-right">

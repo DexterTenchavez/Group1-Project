@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Admin\UserManagementController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\User\DashboardController as UserDashboardController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,9 +36,7 @@ Route::middleware(['auth'])->group(function () {
     });
 
     Route::middleware(['user'])->group(function () {
-        Route::get('/dashboard', function () {
-            return view('user.dashboard');
-        })->name('user.dashboard');
+        Route::get('/dashboard', [UserDashboardController::class, 'index'])->name('user.dashboard');
     });
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

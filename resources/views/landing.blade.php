@@ -474,7 +474,7 @@
         <div class="hero-inner">
             <div class="hero-badge">
                 <span class="hero-badge-dot"></span>
-                2nd Semester · 2023–24
+                2nd Semester · 2026
             </div>
             <h1 class="hero-title">
                 Welcome to
@@ -540,7 +540,7 @@
         </div>
     </div>
 
-    <div class="footer">G1 Group · 2023–24</div>
+    <div class="footer">G1 Group · 2026</div>
 
     <script>
         const homeLink       = document.getElementById('homeLink');
