@@ -6,7 +6,9 @@
         </div>
         <div style="display:flex;gap:8px;">
             <a href="{{ route('admin.users.edit', $user) }}" style="display:inline-flex;align-items:center;gap:8px;background:#ffd966;color:#000;font-size:13px;font-weight:700;padding:9px 18px;border-radius:10px;text-decoration:none;"><i class="bi bi-pencil"></i>Edit</a>
-            <a href="{{ route('admin.users.index') }}" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);color:#f0f0f0;font-size:13px;font-weight:600;padding:9px 18px;border-radius:10px;text-decoration:none;border:1px solid rgba(255,255,255,0.07);"><i class="bi bi-arrow-left"></i>Back</a>
+            <a href="{{ route('admin.users.index') }}" style="display:inline-flex;align-items:center;gap:8px;background:#c8ff00;color:#000;font-size:13px;font-weight:700;padding:10px 20px;border-radius:10px;text-decoration:none;transition:all 0.2s;">
+            <i class="bi bi-arrow-left"></i>Back to Users
+        </a>
         </div>
     </x-slot>
 

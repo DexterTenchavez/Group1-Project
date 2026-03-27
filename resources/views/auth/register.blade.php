@@ -38,10 +38,10 @@
 </head>
 <body>
     <div class="register-wrap">
-        <div class="brand-top"><a href="/">G1<span>.</span></a></div>
+        
         <div class="register-box">
             <h1 class="reg-title">Create an account</h1>
-            <p class="reg-sub">Join G1 Group today.</p>
+           
 
             <form method="POST" action="{{ route('register') }}">
                 @csrf
@@ -50,7 +50,7 @@
                     <label for="name">Full Name</label>
                     <div class="input-wrap">
                         <i class="bi bi-person input-icon"></i>
-                        <input type="text" id="name" name="name" value="{{ old('name') }}" placeholder="Your full name" required autofocus autocomplete="name" class="{{ $errors->has('name') ? 'is-invalid' : '' }}">
+                        <input type="text" id="name" name="name" value="{{ old('name') }}" placeholder="Full Name" required autofocus autocomplete="name" class="{{ $errors->has('name') ? 'is-invalid' : '' }}">
                     </div>
                     @error('name')<div class="field-error"><i class="bi bi-exclamation-circle me-1"></i>{{ $message }}</div>@enderror
                 </div>
@@ -59,7 +59,7 @@
                     <label for="email">Email Address</label>
                     <div class="input-wrap">
                         <i class="bi bi-envelope input-icon"></i>
-                        <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="you@example.com" required autocomplete="username" class="{{ $errors->has('email') ? 'is-invalid' : '' }}">
+                        <input type="email" id="email" name="email" value="{{ old('email') }}" placeholder="email" required autocomplete="username" class="{{ $errors->has('email') ? 'is-invalid' : '' }}">
                     </div>
                     @error('email')<div class="field-error"><i class="bi bi-exclamation-circle me-1"></i>{{ $message }}</div>@enderror
                 </div>

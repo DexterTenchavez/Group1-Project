@@ -7,6 +7,9 @@
         <a href="{{ route('admin.users.create') }}" style="display:inline-flex;align-items:center;gap:8px;background:#c8ff00;color:#000;font-weight:700;font-size:13px;padding:9px 20px;border-radius:10px;text-decoration:none;">
             <i class="bi bi-plus-lg"></i>New User
         </a>
+         <a href="{{ route('admin.dashboard') }}" style="display:inline-flex;align-items:center;gap:8px;background:#c8ff00;color:#000;font-size:13px;font-weight:700;padding:10px 20px;border-radius:10px;text-decoration:none;transition:all 0.2s;">
+            <i class="bi bi-arrow-left"></i>Back
+        </a>
     </x-slot>
 
     <style>
