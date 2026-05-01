@@ -1,3 +1,4 @@
+ <div style="display: center; background: #090a00; height: 100%; margin: 0;">
 <x-app-layout>
     <x-slot name="header">
         <div>
@@ -134,7 +135,7 @@
                         @endif
                     </div>
                     <div style="padding-left:14px;border-left:2px solid #555;">
-                        <div style="font-size:11px;color:#555;margin-bottom:3px;">Last login</div>
+                        <div style="font-size:11px;color:#555;margin-bottom:0px;">Last login</div>
                         <div style="font-size:14px;font-weight:600;color:#f0f0f0;">{{ $user->last_login_at ?? 'N/A' }}</div>
                     </div>
                 </div>
@@ -143,3 +144,4 @@
 
     </div>
 </x-app-layout>
+</div>

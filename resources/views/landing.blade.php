@@ -389,7 +389,7 @@
         <div class="hero-inner">
             <div class="hero-badge">
                 <span class="hero-badge-dot"></span>
-                2nd Semester · 2026
+                WELCOME TO
             </div>
             <h1 class="hero-title">
                 <span class="accent-line">Group 1</span>

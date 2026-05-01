@@ -338,7 +338,7 @@
                             </div>
                             <div>
                                 <p class="fw-semibold mb-1">Welcome to G1 Group!</p>
-                                <small class="text-secondary">2nd Semester 2025-26</small>
+                                
                             </div>
                         </div>
                     </div>

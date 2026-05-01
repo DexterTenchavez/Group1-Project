@@ -1,3 +1,5 @@
+ <div style="display: center; background: #090a00; height: 100%; margin: 0;">
+
 <x-app-layout>
     <x-slot name="header">
         <div>
@@ -115,3 +117,4 @@
         </div>
     </div>
 </x-app-layout>
+</div>

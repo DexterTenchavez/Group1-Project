@@ -1,3 +1,4 @@
+ <div style="display: center; background: #090a00;">
 <x-app-layout>
     <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 50px; margin-bottom: 32px; background: #0a0a0a; padding: 20px 24px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.07);">
         <div>
@@ -293,3 +294,4 @@
     </script>
     @endpush
 </x-app-layout>
+  </div>  
