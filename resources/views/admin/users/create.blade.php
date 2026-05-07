@@ -1,5 +1,11 @@
- <div style="display: center; background: #090a00;">
+
 <x-app-layout>
+    <style>
+    html, body, .min-h-screen, main, [class*="bg-"] {
+        background: #080808 !important;
+        background-color: #080808 !important;
+    }
+</style>
     <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 50px; margin-bottom: 32px; background: #0a0a0a; padding: 20px 24px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.07);">
         <div>
             <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:24px;letter-spacing:-0.5px;color:#ffffff;margin:0 0 6px 0;">Create New User</h1>
@@ -294,4 +300,3 @@
     </script>
     @endpush
 </x-app-layout>
-  </div>  

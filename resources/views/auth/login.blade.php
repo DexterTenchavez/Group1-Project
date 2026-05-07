@@ -43,6 +43,9 @@
             z-index: 0;
             opacity: 0.35;
         }
+        .password-toggle:hover {
+    color: var(--accent) !important;
+}
         .login-container {
             width: 100%;
             max-width: 480px;
@@ -250,6 +253,7 @@
                     <div class="input-wrap">
                         <i class="bi bi-lock input-icon"></i>
                         <input type="password" id="password" name="password" placeholder="password" required autocomplete="current-password" class="{{ $errors->has('password') ? 'is-invalid' : '' }}">
+                        <i class="bi bi-eye-slash password-toggle" id="togglePassword" style="position: absolute; right: 14px; top: 50%; transform: translateY(-50%); cursor: pointer; color: var(--t3); z-index: 2;"></i>
                     </div>
                     @error('password')<div class="field-error"><i class="bi bi-exclamation-circle"></i>{{ $message }}</div>@enderror
                 </div>
@@ -257,10 +261,22 @@
                 <button type="submit" class="btn-login"><i class="bi bi-box-arrow-in-right me-2"></i>Sign In</button>
             </form>
 
-            <div class="divider">or</div>
-            <div class="register-link">Don't have an account? <a href="{{ route('register') }}">Sign up</a></div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    
+    togglePassword.addEventListener('click', function() {
+        // Toggle password type
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+        
+        // Toggle eye icon
+        this.classList.toggle('bi-eye');
+        this.classList.toggle('bi-eye-slash');
+    });
+</script>
 </body>
 </html>

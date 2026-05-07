@@ -1,6 +1,10 @@
-<div style="display: center; background: #090a00; margin: 0; height: 100%;">
-
 <x-app-layout>
+    <style>
+    html, body, .min-h-screen, main, [class*="bg-"] {
+        background: #080808 !important;
+        background-color: #080808 !important;
+    }
+</style>
     <x-slot name="header">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 50px; margin-bottom: 30px; background: #0a0a0a; padding: 20px 24px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.07); padding-top: 40px;">
          <div>
@@ -195,4 +199,3 @@
     </script>
     @endpush
 </x-app-layout>
-</div>

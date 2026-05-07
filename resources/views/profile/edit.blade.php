@@ -1,5 +1,9 @@
 <x-app-layout>
     <style>
+        html, body, .min-h-screen, main, [class*="bg-"] {
+        background: #080808 !important;
+        background-color: #080808 !important;
+    }
         .edit-header {
             background: linear-gradient(135deg, #0a0a0a 0%, #111 100%);
             border: 1px solid rgba(255,255,255,0.07);

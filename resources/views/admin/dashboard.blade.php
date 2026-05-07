@@ -1,6 +1,12 @@
- <div style="display: center; background: #090a00; height: 100vh; margin: 0;">
+
 
     <x-app-layout>
+        <style>
+    html, body, .min-h-screen, main, [class*="bg-"] {
+        background: #080808 !important;
+        background-color: #080808 !important;
+    }
+</style>
         <x-slot name="header">
             <div>
                 <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:22px;letter-spacing:-.4px;color:#f0f0f0;">
@@ -144,5 +150,3 @@
             </table>
         </div>
     </x-app-layout>
-
-</div>
